@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de JavaScript interno</title>
+</head>
+<body>
+    <h1 id="titulo">Olá, Mundo!</h1>
+    <button onclick="mudartexto()">Clique Aqui!</button>
+    
+    <h1 id="titulo2">Hello!</h1>
+    <button onclick="mudartexto2()">Clique Aqui!</button>
+
+    <h1 id="titulo3">Sono</h1>
+    <button onclick="mensagem()">Está com sono?</button>
+
+    <!-- Script Interno -->
+    <script>
+        function mudartexto() {
+            document.getElementById('titulo').innerText = 'Texto alterado!';
+        }
+
+        function mudartexto2() {
+            document.getElementById('titulo2').innerText = 'Texto do Título 2 alterado!'
+        }
+
+        function mensagem() {
+            alert('Vamos dormir?')
+        }
+    </script>
+</body>
+</html>
