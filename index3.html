@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR                                    ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,20 +19,112 @@
         // exemploVar();
 
         // let
-        function exemploLetConst() {
-            let saudacao = 'Olá!';
-            const numero = 42;
+        // function exemploLetConst() {
+        //     let saudacao = 'Olá!';
+        //     const numero = 42;
 
-            if (true) {
-                let saudacao = 'Oi!';
-                const numero = 99;
-                console.log(saudacao);
-                console.log(numero);
-            }
-            console.log(saudacao);
-            console.log(numero);
+        //     if (true) {
+        //         let saudacao = 'Oi!';
+        //         const numero = 99;
+        //         console.log(saudacao);
+        //         console.log(numero);
+        //     }
+        //     console.log(saudacao);
+        //     console.log(numero);
+        // }
+        // exemploLetConst();
+
+        // tipos primitivos
+
+        // let nome = 'João';
+        // console.log(nome);
+        // let saudacao = 'Olá, Como vai?';
+        // console.log(saudacao);
+        // let mensagem = `Oi, ${nome}! Bem vindo ao JavaScript!`; //template string
+        // console.log(mensagem)
+
+        // let idade = 25;
+        // let preco = 19.99;
+        // console.log(idade);
+        // console.log(preco);
+
+        // let estaChovendo = false;
+        // let maiorDeIdade = true;
+
+        // console.log(maiorDeIdade);
+        // console.log(estaChovendo);
+        
+        // let idade = 18;
+
+        // if (idade >= 18) {
+        //     console.log('Maior de idade!');
+        // } else {
+        //     console.log('Menor de idade!');
+        // }
+
+        // let carro = null; // sem valor / vazio.
+        // console.log(carro);
+
+        // let nome;
+        // console.log(nome); // undefined, pois a variável não foi inicializada.
+
+        // let a = 10;
+        // let b = a;
+
+        // a = 20;
+        // console.log(a);
+        // console.log(b);
+
+        // let obj1 = { nome: 'Carlos'};
+        // let obj2 = obj1;
+
+        // obj1.nome = 'Ana';
+
+        // console.log(obj1);
+        // console.log(obj1.nome);
+        // console.log(obj2.nome);
+
+        // let pessoa = {
+        //     nome: 'João',
+        //     idade: 30,
+        //     profissao: 'desenvolvedor'
+        // };
+
+        // //Acessando propriedades
+        // console.log(pessoa.nome);
+        // console.log(pessoa['idade']);
+
+        // //Modificando propriedades
+        // pessoa.profissao = 'Designer';
+        // console.log(pessoa.profissao);
+
+        // pessoa['profissao'] = 'Programador!!';
+        // console.log(pessoa.profissao);
+
+        // //Adicionando novas propriedades
+        // pessoa.cidade = 'Rio de Janeiro';
+        // console.log(pessoa.cidade);
+
+        // console.log(pessoa);
+
+        let frutas = ['maçã', 'banana', 'laranja'];
+
+        // Acessando elementos
+        console.log(frutas[0]);
+        console.log(frutas[2]);
+
+        // Modificando elementos
+        frutas[1] = 'uva';
+        console.log(frutas);
+
+        // Adicionando elementos
+        frutas.push('kiwi');
+        console.log(frutas);
+
+        // Iterando sobre um array
+        for (let listinha of frutas) {
+            console.log(listinha);
         }
-        exemploLetConst();
     </script>
 </body>
 </html>
