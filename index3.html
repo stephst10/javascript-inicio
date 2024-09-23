@@ -7,15 +7,32 @@
 </head>
 <body>
     <script>
-        function exemploVar() {
-            var mensagem = 'Olá, Mundo!';
-            if(true) {
-                var mensagem = 'Dentro do bloco!';
-                console.log(mensagem);
+        // var
+        // function exemploVar() {
+        //     var mensagem = 'Olá, Mundo!';
+        //     if(true) {
+        //         var mensagem = 'Dentro do bloco!';
+        //         console.log(mensagem);
+        //     }
+        //     console.log(mensagem);
+        // }
+        // exemploVar();
+
+        // let
+        function exemploLetConst() {
+            let saudacao = 'Olá!';
+            const numero = 42;
+
+            if (true) {
+                let saudacao = 'Oi!';
+                const numero = 99;
+                console.log(saudacao);
+                console.log(numero);
             }
-            console.log(mensagem);
+            console.log(saudacao);
+            console.log(numero);
         }
-        exemploVar();
+        exemploLetConst();
     </script>
 </body>
 </html>
