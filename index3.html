@@ -107,24 +107,65 @@
 
         // console.log(pessoa);
 
-        let frutas = ['maçã', 'banana', 'laranja'];
+        // let frutas = ['maçã', 'banana', 'laranja'];
 
-        // Acessando elementos
-        console.log(frutas[0]);
-        console.log(frutas[2]);
+        // // Acessando elementos
+        // console.log(frutas[0]);
+        // console.log(frutas[2]);
 
-        // Modificando elementos
-        frutas[1] = 'uva';
-        console.log(frutas);
+        // // Modificando elementos
+        // frutas[1] = 'uva';
+        // console.log(frutas);
 
-        // Adicionando elementos
-        frutas.push('kiwi');
-        console.log(frutas);
+        // // Adicionando elementos
+        // frutas.push('kiwi');
+        // console.log(frutas);
 
-        // Iterando sobre um array
-        for (let listinha of frutas) {
-            console.log(listinha);
+        // // Iterando sobre um array
+        // for (let listinha of frutas) {
+        //     console.log(listinha);
+        // }
+
+        // let frutas = ['Maçã', 'Banana', 'Laranja'];
+        // console.log(frutas);
+
+        // frutas.push('Kiwi')
+        // console.log(frutas);
+
+        // let frutaRemovida = frutas.pop();
+        // console.log(frutaRemovida);
+        // console.log(frutas);
+
+        // let primeiraFruta = frutas.shift();
+        // console.log(primeiraFruta);
+        // console.log(frutas);
+
+        // let indice = frutas.indexOf('Laranja');
+        // console.log(indice);
+
+        // let indiceInexistente = frutas.indexOf('Maçã');
+        // console.log(indiceInexistente);
+
+        // frutas.push('Uva', 'Morango');
+        // console.log(frutas);
+
+        // frutas.splice(1,1, 'Manga', 'Coco');
+        // console.log(frutas);
+
+        function somar(a, b) {
+            return a + b;
         }
+
+        let resultado = somar(5, 3);
+        console.log(`A soma de a e b é: ${resultado}`);
+
+        let multiplicar = function(x, y) {
+            return x * y;
+        }
+        console.log('A multiplicação de x e y é: ' + multiplicar(4,3));
+
+        const subtrair = (a, b) => a - b;
+        console.log('A subtração de a e b é: ' + subtrair(10, 4));
     </script>
 </body>
 </html>
