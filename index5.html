@@ -41,16 +41,26 @@
         //         console.log('Dia Inválido!');
         // }
 
-        let frutas = ["Maçã", "\"Banana\"", "Laranja"];
-        console.log(frutas.length);
-        frutas.push("Kiwi");
+        // let frutas = ["Maçã", "\"Banana\"", "Laranja"];
+        // console.log(frutas.length);
+        // frutas.push("Kiwi");
 
-        for (let i = 0; i < frutas.length; i++) {
-            console.log(frutas[i]);
+        // for (let i = 0; i < frutas.length; i++) {
+        //     console.log(frutas[i]);
+        // }
+
+        // frutas.shift();
+        // console.log(frutas);
+
+        let pessoa = {
+            nome: 'Stephanie',
+            idade: 25,
+            cidade: 'Rio de Janeiro'
+        };
+
+        for (let chave in pessoa) {
+            console.log(`${chave}: ${pessoa[chave]}`);
         }
-
-        frutas.shift();
-        console.log(frutas);
     </script>
 </body>
 </html>
