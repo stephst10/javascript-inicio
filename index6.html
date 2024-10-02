@@ -42,17 +42,37 @@
         // verificarNumero(8);
         // verificarNumero(7);
         
-        function saudacao(nome) {
-            console.log(`Olá, ${nome}!`);
+        // function saudacao(nome) {
+        //     console.log(`Olá, ${nome}!`);
+        // }
+
+        // function processarUsuario(nome, callback) {
+        //     setTimeout(() => {
+        //         console.log("Processando usuário...");
+        //         callback(nome);
+        //     }, 1000)
+        // }
+        // processarUsuario("Maria", saudacao);
+
+        function verificarProdutoDisponivel() {
+            return new Promise(function (resolve, reject) {
+                var produtoDisponivel = false;
+
+                setTimeout(function () {
+                    if (produtoDisponivel) {
+                        resolve("Produto está disponível.");
+                    } else {
+                        reject("Produto não disponível.");
+                    }
+                }, 1000);
+            });
         }
 
-        function processarUsuario(nome, callback) {
-            setTimeout(() => {
-                console.log("Processando usuário...");
-                callback(nome);
-            }, 1000)
-        }
-        processarUsuario("Maria", saudacao);
+        verificarProdutoDisponivel().then(function (mensagem) {
+            console.log(mensagem)
+        }).catch(function (erro) {
+            console.error(erro)
+        })
     </script>
 </body>
 </html>
