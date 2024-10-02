@@ -54,25 +54,40 @@
         // }
         // processarUsuario("Maria", saudacao);
 
-        function verificarProdutoDisponivel() {
-            return new Promise(function (resolve, reject) {
-                var produtoDisponivel = false;
+        // function verificarProdutoDisponivel() {
+        //     return new Promise(function (resolve, reject) {
+        //         var produtoDisponivel = false;
 
-                setTimeout(function () {
-                    if (produtoDisponivel) {
-                        resolve("Produto está disponível.");
-                    } else {
-                        reject("Produto não disponível.");
-                    }
-                }, 1000);
-            });
+        //         setTimeout(function () {
+        //             if (produtoDisponivel) {
+        //                 resolve("Produto está disponível.");
+        //             } else {
+        //                 reject("Produto não disponível.");
+        //             }
+        //         }, 1000);
+        //     });
+        // }
+
+        // verificarProdutoDisponivel().then(function (mensagem) {
+        //     console.log(mensagem)
+        // }).catch(function (erro) {
+        //     console.error(erro)
+        // })
+
+        function dividir(a, b) {
+            try {
+                if (b === 0) {
+                    throw new Error("Divisão por 0 não é permitida.")
+                }
+                return a / b;
+            } catch (erro) {
+                console.error("Erro: ", erro.message)
+            }
         }
 
-        verificarProdutoDisponivel().then(function (mensagem) {
-            console.log(mensagem)
-        }).catch(function (erro) {
-            console.error(erro)
-        })
+        console.log(dividir(10, 2));
+        console.log(dividir(10, 3));
+        console.log(dividir(1, 0));
     </script>
 </body>
 </html>
