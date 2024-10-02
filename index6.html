@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // function exibirMensagem() {
+        //     alert("Olá, esta é uma mensagem de exemplo.");
+        // } 
+        // exibirMensagem();   
+        
+        // function somar(a, b) {
+        //     return a + b;
+        // }
+
+        // const resultado = somar(5, 3);
+        // console.log(`A soma é: ${resultado}` );
+
+        // function calcularArea(largura, altura) {
+        //     const area = largura * altura;
+        //     return area;
+        // }
+
+        // console.log(calcularArea(5, 10))
+
+        // function verificarNumero(num) {
+
+        //     if (num % 2 === 0) {
+        //         let resultado = "O número é par!";
+        //         console.log(resultado);
+        //     } else {
+        //         let resultado = "O número é ímpar!";
+        //         console.log(resultado);
+        //     }
+        // }
+
+        // verificarNumero(13);
+        // verificarNumero(8);
+        // verificarNumero(7);
+        
+        function saudacao(nome) {
+            console.log(`Olá, ${nome}!`);
+        }
+
+        function processarUsuario(nome, callback) {
+            setTimeout(() => {
+                console.log("Processando usuário...");
+                callback(nome);
+            }, 500)
+        }
+        processarUsuario("Maria", saudacao);
+    </script>
+</body>
+</html>
