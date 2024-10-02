@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <script>
         // function exibirMensagem() {
         //     alert("Olá, esta é uma mensagem de exemplo.");
         // } 
         // exibirMensagem();   
-        
+
         // function somar(a, b) {
         //     return a + b;
         // }
@@ -41,7 +43,7 @@
         // verificarNumero(13);
         // verificarNumero(8);
         // verificarNumero(7);
-        
+
         // function saudacao(nome) {
         //     console.log(`Olá, ${nome}!`);
         // }
@@ -74,20 +76,68 @@
         //     console.error(erro)
         // })
 
-        function dividir(a, b) {
+        // function dividir(a, b) {
+        //     try {
+        //         if (b === 0) {
+        //             throw new Error("Divisão por 0 não é permitida.")
+        //         }
+        //         return a / b;
+        //     } catch (erro) {
+        //         console.error("Erro: ", erro.message)
+        //     }
+        // }
+
+        // console.log(dividir(10, 2));
+        // console.log(dividir(10, 3));
+        // console.log(dividir(1, 0));
+
+        // function fazerDownload() {
+        //     return new Promise(function (resolve, reject) {
+        //         setTimeout(function () {
+        //             const sucesso = false;
+
+        //             if (sucesso) {
+        //                 resolve("Download concluído com sucesso!");
+        //             } else {
+        //                 reject("Falha no Download!");
+        //             }
+        //         }, 2000);
+        //     });
+        // }
+
+        // fazerDownload()
+        //     .then(function (mensagem) {
+        //         console.log(mensagem);
+        //     })
+        //     .catch(function (erro) {
+        //         console.error(erro);
+        //     });
+
+         async function fazerDownload() {
+            return new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    const sucesso = true;
+
+                    if (sucesso) {
+                        resolve("Download concluído com sucesso!");
+                    } else {
+                        reject("Falha no Download!");
+                    }
+                }, 2000);
+            });
+        }
+        async function executarDownload() {
             try {
-                if (b === 0) {
-                    throw new Error("Divisão por 0 não é permitida.")
-                }
-                return a / b;
-            } catch (erro) {
-                console.error("Erro: ", erro.message)
+                const mensagem = await fazerDownload();
+                console.log(mensagem);
+            } catch (erro){
+                console.log(erro);
             }
         }
 
-        console.log(dividir(10, 2));
-        console.log(dividir(10, 3));
-        console.log(dividir(1, 0));
+        executarDownload();
+
     </script>
 </body>
+
 </html>
